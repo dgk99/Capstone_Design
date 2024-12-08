@@ -87,7 +87,7 @@ criterion = nn.MSELoss()  # 회귀 문제이므로 MSE 사용
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # 6. 모델 훈련
-num_epochs = 10
+num_epochs = 100
 for epoch in range(num_epochs):
     model.train()  # 학습 모드로 설정
     for images, steering_angles in dataloader:
