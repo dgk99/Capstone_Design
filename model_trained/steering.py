@@ -6,7 +6,7 @@ import os
 labeled_data = []
 
 # 이미지 폴더 경로
-image_folder = "C:\\Users\\USER\\Desktop\\DGK\\mygithub\\Capstone_Design\\traning_data_set"
+image_folder = "C:\\Users\\USER\Desktop\\1209dataSet\\1209dataSet"
 image_files = sorted(os.listdir(image_folder))  # 이미지 파일 정렬
 
 # 레이블링 시작
