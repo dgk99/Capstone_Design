@@ -28,7 +28,7 @@ def preprocess_images(input_dir, output_dir):
         
         # 상단 30% Crop
         H, W, _ = image.shape
-        cropped_image = image[int(H * 0.3):, :]  # 상단 30% 제거
+        cropped_image = image[int(H * 0.3):, :]  # 상단 50% 제거
         
         # 크기 조정 (66x200)
         resized_image = cv2.resize(cropped_image, (200, 66), interpolation=cv2.INTER_AREA)
@@ -38,6 +38,6 @@ def preprocess_images(input_dir, output_dir):
         print(f"Processed and saved: {output_path}")
 
 # Example usage
-input_dir = "C:\\Users\\USER\\Desktop\\20241213_192414"  # 원본 이미지 폴더
-output_dir = "C:\\Users\\USER\\Desktop\\241213_resizing"  # 전처리된 이미지 저장 폴더
+input_dir = "C:\\Users\\USER\\Desktop\\session_20241214_144031"  # 원본 이미지 폴더
+output_dir = "C:\\Users\\USER\\Desktop\\241214_resizing"  # 전처리된 이미지 저장 폴더
 preprocess_images(input_dir, output_dir)
