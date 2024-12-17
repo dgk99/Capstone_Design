@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # CSV 파일 로드
-csv_file = 'C:\\Users\\USER\Desktop\\done\\Real Finish\\데이터 셋 리사이징 및 오버샘플링\\oversampled_data_new_1215_5.csv'
+csv_file = r'C:\Users\USER\Desktop\done\Real Finish\데이터 셋 리사이징 및 오버샘플링\oversampled_data_new_1215_5.csv'
 data = pd.read_csv(csv_file)
 
 # 각도별 데이터 개수 확인

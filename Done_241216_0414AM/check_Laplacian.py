@@ -10,7 +10,7 @@ def calculate_sharpness(image_path):
     return variance
 
 # 흐린 사진의 Laplacian 값 측정
-image_path = "C:\\Users\\USER\\Desktop\\DGK\\mygithub\\Capstone_Design\\1213\\deleted_image\\photo_0162.jpg"  # 흐린 사진의 경로 입력
+image_path = "C:\\Users\\USER\\Desktop\\DGK\\mygithub\\Capstone_Design\\1213\\deleted_image\\photo_0192.jpg"  # 흐린 사진의 경로 입력
 sharpness = calculate_sharpness(image_path)
 
 if sharpness is not None:
